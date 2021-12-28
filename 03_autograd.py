@@ -36,6 +36,8 @@ print(x.grad) # dz/dx
 # specify a gradient argument that is a tensor of matching shape.
 # needed for vector-Jacobian product
 
+# If it is not a scalar, we must give a vector to compute back propogation
+
 x = torch.randn(3, requires_grad=True)
 
 y = x * 2
